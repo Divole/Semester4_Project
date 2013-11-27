@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     height: 100%;
-    background: #d1dbee;
+    background: rgba(159, 166, 180, 0.22);
 }
 
 #sidebar{
@@ -16,18 +16,18 @@ body{
     box-shadow: 0 0 10px #888888;
 
 }
-#pages_title, #new_page{
+#pages_title{
      padding: 10px;
 }
-#new_page{
 
-
-}
 .buttons{
-    width: 70px;
-    height: 60px;
-    border-radius: 10px;
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
     color: #5e5f8b;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #5e5f8b;
     /*border: 1px solid;*/
     background: rgb(242,246,248); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(242,246,248,1) 0%, rgba(216,225,231,1) 24%, rgba(181,198,208,1) 51%, rgba(201,212,221,1) 100%); /* FF3.6+ */
@@ -37,16 +37,9 @@ body{
     background: -ms-linear-gradient(top,  rgba(242,246,248,1) 0%,rgba(216,225,231,1) 24%,rgba(181,198,208,1) 51%,rgba(201,212,221,1) 100%); /* IE10+ */
     background: linear-gradient(to bottom,  rgba(242,246,248,1) 0%,rgba(216,225,231,1) 24%,rgba(181,198,208,1) 51%,rgba(201,212,221,1) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#c9d4dd',GradientType=0 ); /* IE6-9 */
-
-
-
-
-
-    margin-right: 30px;
-
-
-
+    box-shadow: inset 0 0 5px 0 rgb(74, 74, 93);
 }
+
 #content{
     width: auto;
     height: auto;
@@ -68,5 +61,37 @@ body{
     display: inline-block;
     width: 500px;
     float: left;
+}
+#some_text{
+    font-size: 100px;
+    background-color: #565656;
+    color: transparent;
+    text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+    -webkit-background-clip:text;
+    -moz-background-clip: text;
+    background-clip:text;
+}
+
+#saving_text{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: red;
+    color: black;
+}
+
+#wrapper {
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    background-color: #FFF;
+}
+#welcome_msg {
+    float: left;
+    padding: 0;
+    margin: 10px 0px 0px 15px;
+    color: #F4FC02;
+    font-size: 14px;
 }
 
