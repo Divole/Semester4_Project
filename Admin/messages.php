@@ -1,4 +1,4 @@
-<?php include('isLoggedin.php'); ?>
+<?php include('functions/isLoggedin.php'); ?>
 
 <div class="pageWrapper">
 

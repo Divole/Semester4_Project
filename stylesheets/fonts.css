@@ -9,3 +9,8 @@
     font-family: SourceSansPro_Regular;
     src: url('../fonts/SourceSansPro/SourceSansPro-Regular.otf');
 }
+@font-face
+{
+    font-family: Kaushan_Regular;
+    src: url('../fonts/Kaushan/KaushanScript-Regular.otf');
+}

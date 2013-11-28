@@ -16,7 +16,7 @@ if (!isset ( $_SESSION ['name'] )) {
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<link rel="stylesheet" type="text/css" href="includes/style.css"/>
+<!--<link rel="stylesheet" type="text/css" href="includes/style.css"/>-->
 <title>Administrator Area</title>
 </head>
 <body>

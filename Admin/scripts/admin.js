@@ -23,15 +23,30 @@ $( document ).ready(function() {
 
     $('.setting_option').on('click', save);
 
+
 });
+
 function createPage(){
     var url = window.location.href;
     var index = url.indexOf('?');
     if(index > 0){
         url = url.substr(0, index);
     }
-
     window.location = url + "?action=addpage";
+}
+
+//function loadPage(divId, page){
+//    $(document).ready(function(){
+//        $("#"+divId).load(page+'.php');
+//    });
+//}
+function showMessages(){
+    var url = window.location.href;
+    var index = url.indexOf('?');
+    if(index > 0){
+        url = url.substr(0, index);
+    }
+    window.location = url + "?action=messages";
 }
 
 function enable(){
