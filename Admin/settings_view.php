@@ -1,11 +1,11 @@
 <?php require("C:/xampp/htdocs/Semester4_Project/strings/settings_strings.php"); ?>
-<div id="settings">
+<div id="settings_content">
     <h2><?php echo $headline; ?></h2>
     <form method="post">
         <div class="form_part">
             <h4><?php echo $general_headline; ?></h4>
             <div class="sub_form">
-                <p><label for="name"><?php echo $page_name; ?></label><input type="text" name="page_name"></p>
+                <p><label for="name"><?php echo $page_name; ?></label><input id="page_name" type="text" name="page_name" onfocusout="saveName()"></p>
                 <p> <input class="setting_option" type="checkbox" name="settings[]" value="A"><?php echo $main_menu;?></p>
                 <p> <input class="setting_option" type="checkbox" name="settings[]" value="B"><?php echo $article_link;?></p>
                 <p> <input class="setting_option" type="checkbox" name="settings[]" value="C"><?php echo $children_menu;?></p>
@@ -24,7 +24,7 @@
                 <p> <input class="setting_option" type="checkbox" disabled="disabled" name="settings[]" value="J"><?php echo $gallery_groups;?></p>
             </div>
 
-            <h4><?php echo $articles_headline; ?><input class="setting_option" id="btn_articles" type="checkbox" name="settings[]" value="K"><?php echo $ok; ?></h4>
+            <h4><?php echo $articles_headline; ?><input class="setting_option" id="btn_articles" id="btn_articles" type="checkbox" name="settings[]" value="K"><?php echo $ok; ?></h4>
             <div class="sub_form" id="articles_options">
                 <group>
                     <p><input class="setting_option" type="radio" name="settings[]" disabled="disabled" value="L"><?php echo $multiple_articles;?></p>
@@ -73,10 +73,10 @@
             </div>
         </div>
         <br style="clear: left;" />
-        <div style="border-top: 1px solid #888888;text-align: right; padding-top: 10px ">
-            <button id="asdfgh" class="buttons">Save</button>
-        </div>
+
     </form>
 </div>
+<script>
+    getPageSettings();
+</script>
 
-<div id="saving_text" style="visibility: hidden">saving...</div>
